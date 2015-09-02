@@ -130,9 +130,7 @@ $.fn.removeClass = function (className) {
 $.fn.toggleClass = function (className, b) {
 	this.forEach(function (item) {
 		var classList = item.classList;
-		if (typeof b !== 'boolean') {
-			b = !classList.contains(className);
-		}
+		if (typeof b !== 'boolean') b = !classList.contains(className);
 		classList[b ? 'add' : 'remove'].apply(classList, className.split(/\s/));
 	});
 	return this;
@@ -166,9 +164,7 @@ $.parseHTML = function (html) {
 				col: [2, "<table><tbody></tbody><colgroup>", "</colgroup></table>"],
 				area: [1, "<map>", "</map>"],
 				_: [0, "", ""]
-		},
-		wrapper,
-		i;
+		}, wrapper, i;
 	html = html.replace(/^\s+|\s+$/g, '');
 	wrapMap.optgroup = wrapMap.option;
 	wrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.caption = wrapMap.thead;
