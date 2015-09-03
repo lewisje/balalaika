@@ -40,7 +40,7 @@ The second kind of use is using it inside single script as local variable:
 ```
 
 ### Which methods are provided?
-Balalaika uses methods from ``Array.prototype``. It means Balalaika can use any method of native arrays.
+Balalaika inherits from ``Array.prototype``. It means Balalaika can use any method of native arrays.
 ```js
 $('.my-selector').forEach(function (el) {
 	console.log(el);
