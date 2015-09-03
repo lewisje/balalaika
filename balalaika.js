@@ -12,7 +12,7 @@ window.$ = (function (window, document, fn, nsRegAndEvents, id, s_EventListener,
     for (i = 1; i < k.length; i++) {
       if (l = k[i]) {
         for (j in l) {
-          if (Object.prototype.hasOwnProperty.call(l, j)) obj[j] = l[j];
+          obj[j] = l[j];
         }
       }
     }
@@ -64,4 +64,4 @@ window.$ = (function (window, document, fn, nsRegAndEvents, id, s_EventListener,
     }
   });
   return $;
-})(window, document, Array.prototype, /\.(.+)/, 0, 'EventListener', 'MatchesSelector');
+})(window, document, [], /\.(.+)/, 0, 'EventListener', 'MatchesSelector');
