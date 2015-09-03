@@ -2,7 +2,7 @@ Balalaika.js
 =========
 
 [![Join the chat at https://gitter.im/finom/balalaika](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/finom/balalaika?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-## The tiny DOM library (1kB uncompressed and 600 bytes gzipped!)
+## The tiny DOM library (1kB uncompressed and about 600 bytes gzipped!)
 
 Balalaika provides you tiny replacement for huge DOM libraries such as jQuery and Zepto. It contains few methods which should be sufficient for vanilla.js developers.
 
@@ -10,7 +10,7 @@ Balalaika provides you tiny replacement for huge DOM libraries such as jQuery an
 First of all you can use it as common library on the web page. Just paste this code to the ``head`` tag:
 ```html
 <script>
-window.$=function(t,e,n,o,r,i,s,c,u,f,l,p){"use strict";return p=function(t,e){return new p.i(t,e)},p.i=function(o,r){n.push.apply(this,o?o.nodeType||o==t?[o]:""+o===o?/</.test(o)?((c=e.createElement(r||"q")).innerHTML=o,c.children):(r&&p(r)[0]||e).querySelectorAll(o):/f/.test(typeof o)?/c/.test(e.readyState)?o():p(e).on("DOMContentLoaded",o):o:n)},p.i[l="prototype"]=(p.extend=function(t){for(f=arguments,c=1;c<f.length;c++)if(l=f[c])for(u in l)Object.prototype.hasOwnProperty.call(l,u)&&(t[u]=l[u]);return t}).call(p,p.fn=p[l]=n,{on:function(t,e){return t=t.split(o),this.map(function(n){(o[c=t[0]+(n.b$=n.b$||++r)]=o[c]||[]).push([e,t[1]]),n["add"+i](t[0],e)}),this},off:function(t,e){return t=t.split(o),l="remove"+i,this.map(function(n){if(f=o[t[0]+n.b$],c=f&&f.length)for(;u=f[--c];)e&&e!=u[0]||t[1]&&t[1]!=u[1]||(n[l](t[0],u[0]),f.splice(c,1));else t[1]||n[l](t[0],e)}),this},is:function(t){return c=this[0],(c.matches||c["webkit"+s]||c["moz"+s]||c["ms"+s]).call(c,t)}}),p}(window,document,Array.prototype,/\.(.+)/,0,"EventListener","MatchesSelector");
+window.$=function(t,e,n,i,o,r,s,c,u,f,l,a){"use strict";return a=function(t,e){return new a.i(t,e)},a.i=function(i,o){n.push.apply(this,i?i.nodeType||i==t?[i]:""+i===i?/</.test(i)?((c=e.createElement(o||"q")).innerHTML=i,c.children):(o&&a(o)[0]||e).querySelectorAll(i):/f/.test(typeof i)?/c/.test(e.readyState)?i():a(e).on("DOMContentLoaded",i):i:n)},a.i[l="prototype"]=(a.extend=function(t){for(f=arguments,c=1;c<f.length;c++)if(l=f[c])for(u in l)t[u]=l[u];return t}).call(a,a.fn=a[l]=n,{on:function(t,e){return t=t.split(i),this.map(function(n){(i[c=t[0]+(n.b$=n.b$||++o)]=i[c]||[]).push([e,t[1]]),n["add"+r](t[0],e)}),this},off:function(t,e){return t=t.split(i),l="remove"+r,this.map(function(n){if(f=i[t[0]+n.b$],c=f&&f.length)for(;u=f[--c];)e&&e!=u[0]||t[1]&&t[1]!=u[1]||(n[l](t[0],u[0]),f.splice(c,1));else t[1]||n[l](t[0],e)}),this},is:function(t){return c=this[0],(c.matches||c["webkit"+s]||c["moz"+s]||c["ms"+s]).call(c,t)}}),a}(window,document,[],/\.(.+)/,0,"EventListener","MatchesSelector");
 </script>
 ```
 (Looks like Google Analytics embed)
@@ -36,7 +36,7 @@ The second kind of use is using it inside single script as local variable:
 		});
 	});
   // your code ends here
-})(window, function(t,e,n,o,r,i,s,c,u,f,l,p){"use strict";return p=function(t,e){return new p.i(t,e)},p.i=function(o,r){n.push.apply(this,o?o.nodeType||o==t?[o]:""+o===o?/</.test(o)?((c=e.createElement(r||"q")).innerHTML=o,c.children):(r&&p(r)[0]||e).querySelectorAll(o):/f/.test(typeof o)?/c/.test(e.readyState)?o():p(e).on("DOMContentLoaded",o):o:n)},p.i[l="prototype"]=(p.extend=function(t){for(f=arguments,c=1;c<f.length;c++)if(l=f[c])for(u in l)Object.prototype.hasOwnProperty.call(l,u)&&(t[u]=l[u]);return t}).call(p,p.fn=p[l]=n,{on:function(t,e){return t=t.split(o),this.map(function(n){(o[c=t[0]+(n.b$=n.b$||++r)]=o[c]||[]).push([e,t[1]]),n["add"+i](t[0],e)}),this},off:function(t,e){return t=t.split(o),l="remove"+i,this.map(function(n){if(f=o[t[0]+n.b$],c=f&&f.length)for(;u=f[--c];)e&&e!=u[0]||t[1]&&t[1]!=u[1]||(n[l](t[0],u[0]),f.splice(c,1));else t[1]||n[l](t[0],e)}),this},is:function(t){return c=this[0],(c.matches||c["webkit"+s]||c["moz"+s]||c["ms"+s]).call(c,t)}}),p}(window,document,Array.prototype,/\.(.+)/,0,"EventListener","MatchesSelector"));
+})(window, function(t,e,n,i,o,r,s,c,u,f,l,a){"use strict";return a=function(t,e){return new a.i(t,e)},a.i=function(i,o){n.push.apply(this,i?i.nodeType||i==t?[i]:""+i===i?/</.test(i)?((c=e.createElement(o||"q")).innerHTML=i,c.children):(o&&a(o)[0]||e).querySelectorAll(i):/f/.test(typeof i)?/c/.test(e.readyState)?i():a(e).on("DOMContentLoaded",i):i:n)},a.i[l="prototype"]=(a.extend=function(t){for(f=arguments,c=1;c<f.length;c++)if(l=f[c])for(u in l)t[u]=l[u];return t}).call(a,a.fn=a[l]=n,{on:function(t,e){return t=t.split(i),this.map(function(n){(i[c=t[0]+(n.b$=n.b$||++o)]=i[c]||[]).push([e,t[1]]),n["add"+r](t[0],e)}),this},off:function(t,e){return t=t.split(i),l="remove"+r,this.map(function(n){if(f=i[t[0]+n.b$],c=f&&f.length)for(;u=f[--c];)e&&e!=u[0]||t[1]&&t[1]!=u[1]||(n[l](t[0],u[0]),f.splice(c,1));else t[1]||n[l](t[0],e)}),this},is:function(t){return c=this[0],(c.matches||c["webkit"+s]||c["moz"+s]||c["ms"+s]).call(c,t)}}),a}(window,document,[],/\.(.+)/,0,"EventListener","MatchesSelector"));
 ```
 
 ### Which methods are provided?
